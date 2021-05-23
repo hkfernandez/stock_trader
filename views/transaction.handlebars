@@ -1,0 +1,71 @@
+<div data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+  
+      <div class="top-bar" id="example-menu">
+        <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+          <li class="menu-text">Transactions</li>
+          <li><a id="portfolioBtn" class="navBtns" >My Portfolio</a></li>
+          <li><a class="navBtns" href="../market">Marketplace</a></li>
+          <li><a class="navBtns" href="/">Sign Out</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+<br>
+<div class="holy-grail-middle">
+    <div class="holy-grail-middle">
+        <table class="pricing-table hover">
+            <thead>
+                <h3> My Transaction History</h3>
+                <tr>
+                    <th class="name" width="100">Name</th>
+                    <th class="symbol" width="75">Ticker</th>
+                    <th class="price" width="75">Purchase Price</th>
+                    <th class="sharesPurchased" width="100">Shares</th>
+                    <th class="sharesPurchased" width="100">Price</th>
+                    <th class="value" width="75">Total Value</th>
+                </tr>
+            </thead>
+            {{!-- <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>-6.54%</td>
+                    <td>$277.83</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>$390</td>
+                    <td>$1,500</td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td>-8.24%</td>
+                    <td>$137.83</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>$190</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>+6.24%</td>
+                    <td>$49.83</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>$990</td>
+                    <td>$13,800</td>
+                </tr> --}}
+                {{#each transactions}}
+                <tr>
+                    <td>{{Stock.name}}</td>
+                    <td>{{Stock.symbol}}</td>
+                    <td>{{price}}</td>
+                    <td>{{qty}}</td>
+                    <td>{{price}}</td>
+                    <td>{{totalValue}}</td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+
+    </div>

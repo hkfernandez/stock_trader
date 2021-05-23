@@ -1,0 +1,534 @@
+
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../images/skyscreen2.png") center center no-repeat;
+  background-size: cover;
+}
+
+
+#register {
+  position:relative;
+  left:0px;
+}
+
+.hero-full-screen .middle-content-section {
+  text-align: top;
+  color: #fefefe !important;
+  /* background-image: linear-gradient(to bottom right,  #2e2d2a, #02131a); */
+    font-weight: bolder;
+  text-shadow: 100px;
+  margin:20px;
+  opacity:100%
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 6rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
+.middle-content-section {
+  position:relative;
+  bottom:90px;
+}
+
+/* Start of the price table css */
+
+
+.pricing-table {
+  background-color: grey;
+  border: solid 3px black;
+  border-bottom: solid 3px black;
+  width: 100%;
+  text-align: left;
+  list-style-type: none;
+}
+
+.pricing-table li {
+  border-bottom: solid 1px black;
+  padding: 0.875rem 1.125rem;
+}
+
+.pricing-table li:last-child {
+  border-bottom: 0;
+}
+
+.pricing-table .title {
+  background-color: #0a0a0a;
+  color: #fefefe;
+  border-bottom: solid 4px black;
+}
+
+.pricing-table  {
+  background-color: #e6e6e6;
+  font-size: 15px;
+  border-bottom: 0;
+}
+
+.pricing-table .description {
+  color: #8a8a8a;
+  font-size: 80%;
+}
+
+.pricing-table :last-child {
+  margin-bottom: 4px;
+}
+
+body {
+background-color: #1779ba;
+}
+
+.headings {
+font-size:20px;
+}
+
+h3 {
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+
+}
+
+th {
+  color:black;
+  background-color:darkgrey;
+  font-size:17px;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+/* test */
+
+
+.holy-grail-grid {
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+-ms-grid-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+grid-gap: 10px;
+height: 10vh;
+}
+
+@media screen and (max-width: 60em) {
+.holy-grail-grid {
+  -ms-grid-rows: 1fr 1fr 5fr 1fr;
+      grid-template-rows: 1fr 1fr 5fr 1fr;
+}
+}
+
+.holy-grail-middle,
+.holy-grail-header {
+padding: 1rem;
+border: 1px solid #ededed;
+background-color: #ededed;
+}
+
+@media screen and (max-width: 60em) {
+.holy-grail-middle {
+  /* -ms-grid-row: 3; */
+      grid-row-start: 3;
+  /* -ms-grid-column: 1; */
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+}
+
+.navBtns {
+  color: rgba(73, 37, 65, 0.884);
+}
+
+@media screen and (max-width: 39.9375em) {
+.no-js .top-bar {
+  display: none;
+}
+}
+
+@media print, screen and (min-width: 40em) {
+.no-js .title-bar {
+  display: none;
+}
+}
+
+[data-sticky] {
+width: 100%;
+}
+
+.sticky-container {
+z-index: 5;
+}
+
+/* Profile card */
+
+.card-profile-stats {
+border: 1px solid #cacaca;
+margin: 0 0 1.25rem;
+padding: 1.25rem;
+background: #fefefe;
+max-width: fit-content;
+}
+
+.card-profile-stats .card-profile-stats-intro {
+text-align: center;
+}
+
+.card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+border-radius: 50%;
+/* margin: 0 0 1.25rem; */
+}
+
+.card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-content p:last-child {
+margin: 0;
+}
+
+.card-profile-stats .card-profile-stats-container {
+text-align: center;
+}
+
+.card-profile-stats .card-profile-stats-container .card-profile-stats-statistic {
+/* margin: 0 0 1.25rem; */
+}
+
+.card-profile-stats .card-profile-stats-container .card-profile-stats-statistic p:last-child {
+margin: 0;
+}
+
+.card-profile-stats .card-profile-stats-more .card-profile-stats-more-link {
+margin: 0;
+text-align: center;
+font-size: 1.5rem;
+color: #0a0a0a;
+padding: 0.5rem;
+cursor: pointer;
+}
+
+.card-profile-stats .card-profile-stats-more .card-profile-stats-more-content {
+display: none;
+}
+
+
+@media print, screen and (min-width: 64em) {
+.card-profile-stats .card-profile-stats-intro {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  text-align: left;
+}
+.card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+  margin: 0 1.25rem 0 0;
+  max-width: 320px;
+  border-radius: 5px;
+  position:relative;
+  left:95px;
+}
+.card-profile-stats .card-profile-stats-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+}
+
+.balance {
+  position: relative;
+  left:50px;
+}
+
+.holdings {
+  position: relative;
+  top: 80px;
+  right:95px;
+
+}
+.profile {
+  position:relative;
+  right:160px;
+  bottom:20px;
+  color:white;
+  font-weight: bold;
+}
+
+#date {
+  font-size:10px;
+  position:relative;
+ 
+}
+
+.net {
+  position:relative;
+  right:40px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* List of users */
+
+
+.list-group {
+  margin-bottom: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+  position:relative;
+  right: 20px;
+  top:40px;
+  max-width: 200px;
+  font-size: 15px;
+}
+
+.list-group > :last-child {
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.list-group-item > :last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.list-group-item.active {
+  color: #fefefe;
+  background-color: #1779ba;
+  border-color: 1px solid #1779ba;
+}
+
+.list-group-item:hover, .list-group-item:focus {
+  background-color: #e6e6e6;
+}
+
+.list-group-item:hover.active, .list-group-item:focus.active {
+  background-color: #1779ba;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus, .list-group-item[disabled], .list-group-item[disabled]:hover, .list-group-item[disabled]:focus {
+  color: #8a8a8a;
+  cursor: not-allowed;
+  background-color: #fefefe;
+}
+
+/* New user form */
+
+
+form .form-icons {
+  text-align: center;
+  max-width:400px;
+}
+
+form .form-icons h4 {
+  margin-bottom: 1rem;
+}
+
+form .form-icons .input-group-label {
+  background-color: #1779ba;
+  border-color: #1779ba;
+  max-width:400px;
+
+}
+
+form .form-icons .input-group-field {
+  border-color: #1779ba;
+}
+
+form .form-icons .fa {
+  color: white;
+  width: 1rem;
+  max-width:400px;
+  
+}
+
+.signupBtn {
+  max-width:200px;
+}
+
+
+.reveal {
+  display: none;
+}
+
+/* css experiments */
+.nav-nav {
+  background-color: #1779ba;
+  background-image: linear-gradient(to bottom right,  #2e2d2a, #02131a);
+  }
+  
+  .my-nav {
+    background-color: red;
+    color: #bdc3c7;
+    /* color: #e6e6e6; */
+  }
+  
+  .my-card{
+    margin:2%;
+    background-image: linear-gradient(to bottom right,  #818c92, #2c3e50);
+    border-radius: 8px;
+    text-align: center;
+   
+  }
+  
+  a:link {
+    color: white;
+  }
+  
+  body {
+    background-image: url("../images/dulledbackground.png");
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .tiny-text {
+    font-size: xx-small;
+  }
+  
+  .cash {
+    color: #98dd71;
+    text-emphasis: bold;
+  }
+  
+  h6 {
+    color: black;
+    font-weight: bold;
+    font-size:20px;
+  }
+  
+  /* nav bar stuff */
+  
+  .topbar-sticky-shrink {
+    padding: 2rem;
+    transition: padding 0.25s ease;
+    background: #2c3840;
+  }
+  
+  .topbar-sticky-shrink .menu {
+    background: #2c3840;
+  }
+  
+  .is-stuck .topbar-sticky-shrink {
+    padding: 1rem;
+    transition: padding 0.25s ease;
+  }
+  
+  [data-sticky] {
+    width: 100%;
+  }
+  
+
+  .logo {
+    float: left;
+    size: 10%;
+    margin-right: 50px;
+    padding: 0%;
+  }
+  
+  .logo-img {
+    size: 20px;
+  }
+  
+  h4 {
+    color: white;
+position:relative;
+right:160px;  }
+  
+  .my-stock {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    
+  }
+
+  .opacity-card {
+    opacity: 98%;
+  }
+  
+  .stockBlock {
+    padding:5px;
+    color: #fefefe;
+    font-size:25px;
+    font-weight: bolder;
+  }
+
+  .profile-card {
+    background-image: linear-gradient(to bottom right, #fefefe, #96a2af);
+    font-size:25px;
+    font-weight: bolder;
+  }
+
+  #summary {
+    color:#050607;
+    font-weight: bolder;
+  }

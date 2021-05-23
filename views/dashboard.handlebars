@@ -1,0 +1,36 @@
+{{!-- {{#each user}} --}}
+<div data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+        <div class="top-bar" id="example-menu">
+            <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+                <li class="menu-text">My Portfolio</li>
+                <li><a class="navBtns" class="navBtns" href="../market">Marketplace</a></li>
+                <li><a id='transactionsBtn' class="navBtns">Transactions</a></li>
+                <li><a class="navBtns" href="/">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+       <div class="cell large-12 small-12 my-card profile-card">
+           <h1>Welcome, {{user.userName}}!</h1>
+           <div class="grid-x">
+            <div class="cell medium-4 small-12"><h3 id="summary">${{totals.netWorth}}</h1><h6>Total Net Worth</h6></div>
+            <div class="cell medium-4 small-6"><h3 id="summary">${{user.currentBalance}}</h3><h6>Total Cash</h6></div>
+            <div class="cell medium-4 small-6"><h3 id="summary">${{totals.holdings}}</h3><h6>Total Stocks</h6></div>
+           </div>
+       </div>
+    </div>
+  {{!-- <h4>Investments</h4> --}}
+    
+     <div class="grid-x opacity-card">
+		{{#each transactions}}
+		{{> stocks/transaction-block}}
+		{{/each}}
+	{{!-- {{> stocks/sellmodal}} --}}
+                
+
+    </div>
+</div>
+

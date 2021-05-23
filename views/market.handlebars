@@ -1,0 +1,30 @@
+<div data-sticky-container>
+    <div data-sticky data-options="marginTop:0;">
+  
+      <div class="top-bar" id="example-menu my-nav">
+        <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown my-nav">
+          <li class="menu-text">Marketplace</li>
+          <li><a id="portfolioBtn" class="navBtns" >My Portfolio</a></li>
+          <li><a id='transactionsBtn' class="navBtns">Transactions</a></li>
+          <li><a class="navBtns" href="/">Sign Out</a></li>
+        </ul>
+      </div>
+  </div>
+  <br>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+       <div class="cell large-12 small-12 my-card profile-card">
+           <h1>Available Stocks</h1>
+       </div>
+    </div>
+          <div class="grid-x stockBlock">
+
+          {{#each stock}}
+          {{> stocks/stock-block}}
+          {{/each}}
+        </tbody>
+      </table>
+          {{> stocks/buymodal}}
+
+    </div>
+  </div>
