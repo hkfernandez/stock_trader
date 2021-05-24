@@ -121,6 +121,8 @@ module.exports = function (app) {
 					console.log('STOCKS PUT API HIT AND STOCKS UPDATED!!!!!!!!!!!!!!!!!!!!!');
 				}
 			)
+				.catch(err => console.log('API call error', err))
+
 		}
 	)
 
@@ -133,7 +135,8 @@ module.exports = function (app) {
 					// console.log("New user created " , result);
 					res.json(result);
 				}
-			);
+			).catch(err => console.log('Create user error', err))
+
 	}
 	);
 
@@ -146,7 +149,8 @@ module.exports = function (app) {
 					// console.log("New user created " , result);
 					res.json(result);
 				}
-			);
+			).catch(err => console.log('find users error', err))
+
 	}
 	);
 
@@ -159,7 +163,8 @@ module.exports = function (app) {
 					// console.log("CURRENT STOCKS " , result);
 					res.json(result);
 				}
-			);
+			).catch(err => console.log('find all stocks error', err))
+
 	}
 	);
 
@@ -174,8 +179,7 @@ module.exports = function (app) {
 					// console.log("CURRENT STOCKS " , result);
 					res.json(result);
 				}
-
-			);
+			).catch(err => console.log('find a stock error', err))
 	}
 	);
 
@@ -199,11 +203,8 @@ module.exports = function (app) {
 						// console.log('RESULT!!!!!!!!!!!!!!!!!', result);
 						response.json(result);
 					}
-				)
+				).catch(err => console.log('purchase a stock error', err))
 		}
 	);
-
-	// Model.update({ field: sequelize.literal('field + 2') }, { where: { id: model_id } });
-
 
 }
